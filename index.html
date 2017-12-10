@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>AngularJS Rating Directive</title>   
+  <link href="css/style.css" rel="stylesheet"/>    
+<script src="js/angular.js"></script>
+<script src='js/jquery.min.js'></script>
+</head>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<body>
+  <head>
+</head>
+<body ng-app="RatingApp" ng-controller="RatingCtrl" ng-init="rating = star.rating + 1">
+  <skill-rating ng-model="rating2" max="5" on-rating-selected="rateFunction(rating)"></skill-rating>
+  <br/><br/>
+  <skill-rating ng-model="rating1" max="5" on-rating-selected="rateFunction(rating)"></skill-rating>
+</body>
+<script  src="js/index.js"></script>
+
+</body>
+</html>
